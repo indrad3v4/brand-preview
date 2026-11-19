@@ -24,51 +24,59 @@
 @font-face{font-family:Lit;src:url(fonts/literata-i.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap}
 @font-face{font-family:NS;src:url(fonts/nimbus-400.woff2) format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:NS;src:url(fonts/nimbus-700.woff2) format('woff2');font-weight:700;font-display:swap}
-:root{--ground:#070A0C;--panel:#131819;--noise:#1A2024;--text:#E8EFED;--muted:#8B9997;--metric:#4FE0C8;--signal:#FF5A23;--pulse:#C9FF4D;--line:#1A2024}
+:root{--ground:#070A0C;--noise:#1A2024;--panel:#12191C;--raised:#1E2427;--line:#243033;--line-plus:#434D50;--field:#5C7375;--text:#EFF4F1;--muted:#93A8A4;--metric:#4FE0C8;--signal:#FF5A23;--signal-text:#FF9066;--pulse:#C9FF4D;--decay:#7FA83B;--decay2:#2A3A16;--danger:#E0574B}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--ground);color:var(--text);font-family:NS,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
 .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 .glow{position:absolute;right:-180px;top:-220px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(79,224,200,.16),rgba(79,224,200,0) 62%)}
-.kick{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:40px}
+.kick{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:40px}
 .kick b{color:var(--signal);font-weight:400}
-header h1{font-family:Prata,Georgia,serif;font-weight:400;font-size:clamp(48px,9vw,104px);line-height:1.02;letter-spacing:-.015em;margin:22px 0 24px}
+header h1{font-family:Lit,Georgia,serif;font-weight:600;font-size:clamp(34px,5.6vw,64px);line-height:1.06;letter-spacing:-.01em;margin:22px 0 24px}
 header h1 em{font-style:normal;color:var(--signal)}
-.lede{font-family:Lit,Georgia,serif;font-size:clamp(17px,2.2vw,21px);line-height:1.55;color:#C6D2CF;max-width:36em;padding-bottom:52px}
+.lede{font-family:Lit,Georgia,serif;font-size:clamp(17px,2.2vw,21px);line-height:1.55;color:var(--muted);max-width:36em;padding-bottom:52px}
 .lang{display:flex;gap:8px;padding-top:44px;justify-content:flex-end;margin-top:-8px}
-.lang a{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--line);padding:5px 10px}
+.lang a{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:2px;padding:5px 10px}
+.lang a[aria-current]{color:var(--text);border-color:var(--field)}
 .lang a[aria-current="true"]{color:var(--ground);background:var(--metric);border-color:var(--metric)}
 section{padding:56px 0;border-bottom:1px solid var(--line)}
-h2{font-family:Prata,Georgia,serif;font-weight:400;font-size:clamp(26px,4vw,40px);line-height:1.12;margin-bottom:10px}
+h2{font-family:Lit,Georgia,serif;font-weight:600;font-size:clamp(20px,2.8vw,26px);line-height:1.2;margin-bottom:10px}
 .sub{font-size:13px;color:var(--muted);margin-bottom:34px;max-width:44em}
-.quote{font-family:Prata,Georgia,serif;font-size:clamp(28px,4.4vw,46px);line-height:1.14;max-width:24em;margin:6px 0 14px}
+.quote{font-family:Prata,Georgia,serif;font-size:clamp(38px,6vw,61px);line-height:1.14;max-width:24em;margin:6px 0 14px}
 .quote span{color:var(--signal)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px}
 .card{border:1px solid var(--line);padding:18px 18px 20px;background:var(--panel)}
 .chip{height:56px;margin:-18px -18px 16px}
-.hex{font-family:NS,monospace;font-size:12.5px;color:var(--metric);letter-spacing:.02em}
+.hex{font-family:NS,monospace;font-size:13px;color:var(--metric);letter-spacing:.02em}
 .cname{font-size:14.5px;font-weight:700;margin:2px 0 4px}
-.cnote{font-size:12.5px;color:var(--muted);line-height:1.5}
+.cnote{font-size:13px;color:var(--muted);line-height:1.5}
 .spec{margin-bottom:26px}
-.spec .s1{font-family:Prata,Georgia,serif;font-size:clamp(26px,3.6vw,38px);line-height:1.16}
+.spec .s1{font-family:Lit,Georgia,serif;font-weight:600;font-size:22px;line-height:1.3}
 .spec .s2{font-family:Lit,Georgia,serif;font-size:17px;line-height:1.6;max-width:34em;margin-top:10px}
 .spec .s3{font-size:13px;color:var(--muted);margin-top:8px}
-.label{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.label{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 .roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .role{border-left:2px solid var(--signal);padding:4px 0 4px 18px}
 .role h3{font-size:15px;font-weight:700;margin-bottom:6px}
-.role p{font-family:Lit,Georgia,serif;font-size:15px;color:#C6D2CF;line-height:1.55}
+.role p{font-family:Lit,Georgia,serif;font-size:15px;color:var(--muted);line-height:1.55}
 .ban{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.rule{margin-top:20px;padding:16px 18px;border-left:2px solid #FF5A23;background:#101618;color:#C6D2CF;font-family:Lit,Georgia,serif;font-size:16px;line-height:1.55}
+.rule{margin-top:20px;padding:16px 18px;border-left:2px solid var(--signal);background:var(--panel);color:var(--text);font-family:Lit,Georgia,serif;font-size:16px;line-height:1.55}
 .rule b{color:#E8EFED}
-.ban span{border:1px solid var(--line);color:var(--muted);font-size:12.5px;padding:6px 12px}
-footer{padding:44px 0 64px;font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ban span{border:1px solid var(--line);color:var(--muted);font-size:13px;border-radius:2px;padding:6px 12px}
+footer{padding:44px 0 64px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:var(--metric);text-decoration:none;border-bottom:1px solid rgba(79,224,200,.35)}
+*:focus-visible{outline:2px solid var(--metric);outline-offset:2px;border-radius:2px}
+.card,.role,.spec,.rule{border-radius:2px}
+.flag{display:inline-flex;flex-direction:column;width:26px;height:17px;border:1px solid var(--line);margin-right:10px;vertical-align:middle;overflow:hidden}
+.flag i{display:block;flex:1}
+.flag i:nth-child(1),.flag i:nth-child(3){background:#FFFFFF}
+.flag i:nth-child(2){background:#C8102E}
+.lang{display:flex;align-items:center;justify-content:flex-end;gap:8px}
 </style>
 </head>
 <body>
 <div class="hero"><div class="glow"></div><div class="wrap">
-<div class="lang"><a href="index.html" hreflang="be">BY</a><a href="pl.html" hreflang="pl" aria-current="true">PL</a><a href="en.html" hreflang="en">EN</a></div>
+<div class="lang"><span class="flag" role="img" aria-label="беларускі сцяг"><i></i><i></i><i></i></span><a href="index.html" hreflang="be">BY</a><a href="pl.html" hreflang="pl" aria-current="true">PL</a><a href="en.html" hreflang="en">EN</a></div>
 <div class="kick">INDRA AI · <b>брэнд-кіт v3.6</b></div>
 <h1>Nocny<br>przyrząd<em>.</em></h1>
 <p class="lede">Paleta, typografia, stany i zakazy. Osiem stron z jednym prawem: jeden obiekt mówi – reszta czeka.</p>
@@ -85,7 +93,7 @@ footer a{color:var(--metric);text-decoration:none;border-bottom:1px solid rgba(7
 <section>
 <h2>Paleta</h2>
 <p class="sub">Cztery role koloru, każda z kontrastem policzonym kodem, nie na oko.</p>
-<div class="grid"><div class="card"><div class="chip" style="background:#070A0C;border-bottom:1px solid #1A2024"></div><div class="cname">baza</div><div class="hex">#070A0C</div><div class="cnote">Głęboka, ale nie czarna: tekst trzyma na niej 17,85:1.</div></div><div class="card"><div class="chip" style="background:#1A2024"></div><div class="cname">szum</div><div class="hex">#1A2024</div><div class="cnote">Panele i granice. 1,31:1 do bazy – celowo cicho.</div></div><div class="card"><div class="chip" style="background:#4FE0C8"></div><div class="cname">metryka</div><div class="hex">#4FE0C8</div><div class="cnote">Liczby i odczyty. 12,13:1 – najgłośniejsze miejsce w systemie.</div></div><div class="card"><div class="chip" style="background:#FF5A23"></div><div class="cname">sygnał</div><div class="hex">#FF5A23</div><div class="cnote">Działanie. 6,37:1 do bazy – jeden taki element na ekran.</div></div><div class="card"><div class="chip" style="background:linear-gradient(90deg,#C9FF4D,#7FA83B,#2A3A16)"></div><div class="cname">powidok</div><div class="hex">#C9FF4D → #2A3A16</div><div class="cnote">Ślad sygnału, który już zniknął. Tylko w dynamice, nigdy jako tło.</div></div><div class="card"><div class="chip" style="background:#E8EFED"></div><div class="cname">tekst</div><div class="hex">#E8EFED</div><div class="cnote">Nie biały: biały na ciemnym męczy oczy przy długim czytaniu.</div></div></div>
+<div class="grid"><div class="card"><div class="chip" style="background:#070A0C;border:1px solid #243033"></div><div class="cname">baza</div><div class="hex">#070A0C</div><div class="cnote">Głęboka, ale nie czarna: tekst trzyma na niej 17,85:1.</div></div><div class="card"><div class="chip" style="background:#1A2024"></div><div class="cname">szum</div><div class="hex">#1A2024</div><div class="cnote">Panele i granice. 1,31:1 do bazy – celowo cicho.</div></div><div class="card"><div class="chip" style="background:#4FE0C8"></div><div class="cname">metryka</div><div class="hex">#4FE0C8</div><div class="cnote">Liczby i odczyty. 12,13:1 – najgłośniejsze miejsce w systemie.</div></div><div class="card"><div class="chip" style="background:#FF5A23"></div><div class="cname">sygnał</div><div class="hex">#FF5A23</div><div class="cnote">Działanie. 6,37:1 do bazy – jeden taki element na ekran.</div></div><div class="card"><div class="chip" style="background:linear-gradient(90deg,#C9FF4D,#7FA83B,#2A3A16)"></div><div class="cname">powidok</div><div class="hex">#C9FF4D → #2A3A16</div><div class="cnote">Ślad sygnału, który już zniknął. Tylko w dynamice, nigdy jako tło.</div></div><div class="card"><div class="chip" style="background:#EFF4F1"></div><div class="cname">tekst</div><div class="hex">#EFF4F1</div><div class="cnote">Nie biały: biały na ciemnym męczy oczy przy długim czytaniu.</div></div></div>
 <div class="ban"><span>zakaz: neon</span><span>tło gradientowe</span><span>druga wypełniona krawędź</span><span>kapitaliki z trackingiem</span><span>mem bez insightu</span></div>
 <div class="rule"><b>Memy – tak.</b> Mem niesie insight, a nie zastępuje go. Co starsze niż miesiąc – to już nie żart.</div>
 </section>
