@@ -1,0 +1,22 @@
+# INDRA AI · брэнд-кіт «Начны прыбор»
+
+> Брэнд-кіт агентуры Indra AI (Кракаў): палітра «Начны прыбор · неон», тыпаграфіка Prata / Literata / Nimbus Sans, станы і забароны. 14 старонак PDF, тры мовы.
+
+## Асноўнае
+
+- Палітра: аснова #070A0C, панэль #12191C, тэкст #EFF4F1, дробка #93A8A4, метрыка #4FE0C8, сігнал #FF5A23, пульс #C9FF4D, памылка #E0574B.
+- Тыпаграфіка: Prata – толькі інсайт-цытата 44–46 pt; Literata – увесь тэкст, 17 px / 1,55; Nimbus Sans – UI і лічбы.
+- Правілы: адна заліўка на экран, мем дапаўняе аргумент, фокус 2 px #4FE0C8, край поля не ніжэйшы за 3:1.
+- Парадак праверкі: AI-краўлер → мабільны чалавек → дэсктоп → планшэт.
+- Мовы: BY / PL / EN, кожная са сваім адрасам і hreflang.
+
+## Старонкі
+
+- [Беларуская](https://indrad3v4.github.io/brand-preview/)
+- [Polski](https://indrad3v4.github.io/brand-preview/pl.html)
+- [English](https://indrad3v4.github.io/brand-preview/en.html)
+
+## Кантакты
+
+- Сайт: https://indra-ai.dev
+- Портфоліа: https://indrad3v4.github.io/portfolio/

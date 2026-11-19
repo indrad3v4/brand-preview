@@ -9,6 +9,7 @@
 <link rel="alternate" hreflang="be" href="https://indrad3v4.github.io/brand-preview/index.html">
 <link rel="alternate" hreflang="pl" href="https://indrad3v4.github.io/brand-preview/pl.html">
 <link rel="alternate" hreflang="en" href="https://indrad3v4.github.io/brand-preview/en.html">
+<link rel="alternate" hreflang="x-default" href="https://indrad3v4.github.io/brand-preview/index.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Начны прыбор – брэнд-кіт v3.6 · Indra AI">
 <meta property="og:description" content="Палітра, тыпаграфіка, станы і забароны. Восем старонак з адным законам: адзін аб'ект кажа – астатняе чакае.">
@@ -17,6 +18,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Indra AI Agency", "url": "https://indra-ai.dev", "description": "AI-агентура ў Кракаве: бачнасць брэнда ў адказах AI-пошуку.", "sameAs": ["https://indrad3v4.github.io/portfolio/"]}, {"@type": "WebPage", "name": "Начны прыбор – брэнд-кіт v3.6 · Indra AI", "inLanguage": "be", "url": "https://indrad3v4.github.io/brand-preview/index.html"}]}</script>
 <style>
 @font-face{font-family:Prata;src:url(fonts/prata.woff2) format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:Lit;src:url(fonts/literata-400.woff2) format('woff2');font-weight:400;font-display:swap}
@@ -32,11 +34,11 @@ body{background:var(--ground);color:var(--text);font-family:NS,Helvetica,Arial,s
 .glow{position:absolute;right:-180px;top:-220px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(79,224,200,.16),rgba(79,224,200,0) 62%)}
 .kick{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:40px}
 .kick b{color:var(--signal);font-weight:400}
-header h1{font-family:Lit,Georgia,serif;font-weight:600;font-size:clamp(34px,5.6vw,64px);line-height:1.06;letter-spacing:-.01em;margin:22px 0 24px}
-header h1 em{font-style:normal;color:var(--signal)}
+.hero h1{font-family:Lit,Georgia,serif;font-weight:600;font-size:clamp(34px,5.6vw,64px);line-height:1.06;letter-spacing:-.01em;margin:22px 0 24px}
+.hero h1 em{font-style:normal;color:var(--signal)}
 .lede{font-family:Lit,Georgia,serif;font-size:clamp(17px,2.2vw,21px);line-height:1.55;color:var(--muted);max-width:36em;padding-bottom:52px}
 .lang{display:flex;gap:8px;padding-top:44px;justify-content:flex-end;margin-top:-8px}
-.lang a{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:2px;padding:5px 10px}
+.lang a{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:2px;padding:5px 10px}
 .lang a[aria-current]{color:var(--text);border-color:var(--field)}
 .lang a[aria-current="true"]{color:var(--text);border-color:var(--field);background:transparent}
 section{padding:56px 0;border-bottom:1px solid var(--line)}
@@ -71,14 +73,16 @@ footer a{color:var(--metric);text-decoration:none;border-bottom:1px solid rgba(7
 .flag i{display:block;flex:1}
 .flag i:nth-child(1),.flag i:nth-child(3){background:#FFFFFF}
 .flag i:nth-child(2){background:#C8102E}
-.lang{display:flex;align-items:center;justify-content:flex-end;gap:8px}
+.lang{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+@media (max-width:480px){.hero h1{font-size:34px}.wrap{padding:0 18px}.grid{grid-template-columns:1fr}.lang a{min-width:44px;min-height:44px}}
+.flag{flex:0 0 auto}
 </style>
 </head>
 <body>
 <div class="hero"><div class="glow"></div><div class="wrap">
 <div class="lang"><span class="flag" role="img" aria-label="беларускі сцяг"><i></i><i></i><i></i></span><a href="index.html" hreflang="be" aria-current="true">BY</a><a href="pl.html" hreflang="pl">PL</a><a href="en.html" hreflang="en">EN</a></div>
 <div class="kick">INDRA AI · <b>брэнд-кіт v3.6</b></div>
-<h1>Начны<br>прыбор<em>.</em></h1>
+<h1>Начны прыбор<em>.</em></h1>
 <p class="lede">Палітра, тыпаграфіка, станы і забароны. Восем старонак з адным законам: адзін аб'ект кажа – астатняе чакае.</p>
 </div></div>
 

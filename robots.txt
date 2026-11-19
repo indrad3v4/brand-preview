@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://indrad3v4.github.io/brand-preview/sitemap.xml
