@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Night instrument – brand kit v3.6 · Indra AI</title>
+<meta name="description" content="Palette, typography, states and bans. Eight pages with one law: one object speaks – the rest waits.">
+<link rel="canonical" href="https://indrad3v4.github.io/brand-preview/en.html">
+<link rel="alternate" hreflang="be" href="https://indrad3v4.github.io/brand-preview/index.html">
+<link rel="alternate" hreflang="pl" href="https://indrad3v4.github.io/brand-preview/pl.html">
+<link rel="alternate" hreflang="en" href="https://indrad3v4.github.io/brand-preview/en.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Night instrument – brand kit v3.6 · Indra AI">
+<meta property="og:description" content="Palette, typography, states and bans. Eight pages with one law: one object speaks – the rest waits.">
+<meta property="og:image" content="https://indrad3v4.github.io/brand-preview/og.png">
+<meta property="og:url" content="https://indrad3v4.github.io/brand-preview/en.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@font-face{font-family:Prata;src:url(fonts/prata.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Lit;src:url(fonts/literata-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Lit;src:url(fonts/literata-600.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:Lit;src:url(fonts/literata-i.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:NS;src:url(fonts/nimbus-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:NS;src:url(fonts/nimbus-700.woff2) format('woff2');font-weight:700;font-display:swap}
+:root{--ground:#070A0C;--panel:#131819;--noise:#1A2024;--text:#E8EFED;--muted:#8B9997;--metric:#4FE0C8;--signal:#FF5A23;--pulse:#C9FF4D;--line:#1A2024}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ground);color:var(--text);font-family:NS,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.glow{position:absolute;right:-180px;top:-220px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(79,224,200,.16),rgba(79,224,200,0) 62%)}
+.kick{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:40px}
+.kick b{color:var(--signal);font-weight:400}
+header h1{font-family:Prata,Georgia,serif;font-weight:400;font-size:clamp(48px,9vw,104px);line-height:1.02;letter-spacing:-.015em;margin:22px 0 24px}
+header h1 em{font-style:normal;color:var(--signal)}
+.lede{font-family:Lit,Georgia,serif;font-size:clamp(17px,2.2vw,21px);line-height:1.55;color:#C6D2CF;max-width:36em;padding-bottom:52px}
+.lang{display:flex;gap:8px;padding-top:44px;justify-content:flex-end;margin-top:-8px}
+.lang a{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--line);padding:5px 10px}
+.lang a[aria-current="true"]{color:var(--ground);background:var(--metric);border-color:var(--metric)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-family:Prata,Georgia,serif;font-weight:400;font-size:clamp(26px,4vw,40px);line-height:1.12;margin-bottom:10px}
+.sub{font-size:13px;color:var(--muted);margin-bottom:34px;max-width:44em}
+.quote{font-family:Prata,Georgia,serif;font-size:clamp(28px,4.4vw,46px);line-height:1.14;max-width:24em;margin:6px 0 14px}
+.quote span{color:var(--signal)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px}
+.card{border:1px solid var(--line);padding:18px 18px 20px;background:var(--panel)}
+.chip{height:56px;margin:-18px -18px 16px}
+.hex{font-family:NS,monospace;font-size:12.5px;color:var(--metric);letter-spacing:.02em}
+.cname{font-size:14.5px;font-weight:700;margin:2px 0 4px}
+.cnote{font-size:12.5px;color:var(--muted);line-height:1.5}
+.spec{margin-bottom:26px}
+.spec .s1{font-family:Prata,Georgia,serif;font-size:clamp(26px,3.6vw,38px);line-height:1.16}
+.spec .s2{font-family:Lit,Georgia,serif;font-size:17px;line-height:1.6;max-width:34em;margin-top:10px}
+.spec .s3{font-size:13px;color:var(--muted);margin-top:8px}
+.label{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.role{border-left:2px solid var(--signal);padding:4px 0 4px 18px}
+.role h3{font-size:15px;font-weight:700;margin-bottom:6px}
+.role p{font-family:Lit,Georgia,serif;font-size:15px;color:#C6D2CF;line-height:1.55}
+.ban{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.rule{margin-top:20px;padding:16px 18px;border-left:2px solid #FF5A23;background:#101618;color:#C6D2CF;font-family:Lit,Georgia,serif;font-size:16px;line-height:1.55}
+.rule b{color:#E8EFED}
+.ban span{border:1px solid var(--line);color:var(--muted);font-size:12.5px;padding:6px 12px}
+footer{padding:44px 0 64px;font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--metric);text-decoration:none;border-bottom:1px solid rgba(79,224,200,.35)}
+</style>
+</head>
+<body>
+<div class="hero"><div class="glow"></div><div class="wrap">
+<div class="lang"><a href="index.html" hreflang="be">BY</a><a href="pl.html" hreflang="pl">PL</a><a href="en.html" hreflang="en" aria-current="true">EN</a></div>
+<div class="kick">INDRA AI · <b>брэнд-кіт v3.6</b></div>
+<h1>Night<br>instrument<em>.</em></h1>
+<p class="lede">Palette, typography, states and bans. Eight pages with one law: one object speaks – the rest waits.</p>
+</div></div>
+
+<div class="wrap">
+
+<section>
+<div class="label">idea</div>
+<div class="quote">The instrument sees not darkness,<br>but <span>difference</span>.</div>
+<p class="sub">Amplifying a weak signal in the noise – that is both the night-vision device and the work on a brand: not “make it brighter”, but find the difference nobody else sees.</p>
+</section>
+
+<section>
+<h2>Palette</h2>
+<p class="sub">Four colour roles, each with contrast computed in code, not by eye.</p>
+<div class="grid"><div class="card"><div class="chip" style="background:#070A0C;border-bottom:1px solid #1A2024"></div><div class="cname">ground</div><div class="hex">#070A0C</div><div class="cnote">Deep, not black: text holds 17.85:1 on it.</div></div><div class="card"><div class="chip" style="background:#1A2024"></div><div class="cname">noise</div><div class="hex">#1A2024</div><div class="cnote">Panels and borders. 1.31:1 to the ground – deliberately quiet.</div></div><div class="card"><div class="chip" style="background:#4FE0C8"></div><div class="cname">metric</div><div class="hex">#4FE0C8</div><div class="cnote">Numbers and readouts. 12.13:1 – the loudest spot in the system.</div></div><div class="card"><div class="chip" style="background:#FF5A23"></div><div class="cname">signal</div><div class="hex">#FF5A23</div><div class="cnote">Action. 6.37:1 against the ground – one such element per screen.</div></div><div class="card"><div class="chip" style="background:linear-gradient(90deg,#C9FF4D,#7FA83B,#2A3A16)"></div><div class="cname">afterglow</div><div class="hex">#C9FF4D → #2A3A16</div><div class="cnote">Trace of a signal already gone. In motion only, never as a background.</div></div><div class="card"><div class="chip" style="background:#E8EFED"></div><div class="cname">text</div><div class="hex">#E8EFED</div><div class="cnote">Not white: white on dark hurts the eyes over long reading.</div></div></div>
+<div class="ban"><span>banned: neon</span><span>gradient background</span><span>second filled button</span><span>caps with tracking</span><span>meme without insight</span></div>
+<div class="rule"><b>Memes – yes.</b> A meme carries the insight, it never replaces it. Anything older than a month is no longer a joke.</div>
+</section>
+
+<section>
+<h2>Typography</h2>
+<p class="sub">Three voices, one job each. They never argue, because they never share a line.</p>
+<div class="spec"><div class="label">Prata · insight quote · 46px+</div><div class="s1">Signal in the noise.</div></div>
+<div class="spec"><div class="label">Literata · body · 17–22px</div><div class="s2">This voice holds long text: large x-height, sturdy serifs, readable on a dark field for hours.</div></div>
+<div class="spec"><div class="label">Helvetica · UI, numbers, captions</div><div class="s3">Kraków, 2026 · 27.3 · #4FE0C8 · 4.5:1</div></div>
+</section>
+
+<section>
+<h2>Three roles</h2>
+<p class="sub">Not “many agents”, but one product where everyone has the right to refuse.</p>
+<div class="roles"><div class="role"><h3>Instrument</h3><p>Runs the measurements. Its output is a number with a source, not an opinion.</p></div><div class="role"><h3>Writer</h3><p>Writes everything people read. One voice for the whole page.</p></div><div class="role"><h3>Guardian</h3><p>Does not write or measure – it removes the sentence the number cannot hold.</p></div></div>
+</section>
+
+<footer><span>Indra AI Agency, Kraków · 19.11.2026</span><a href="https://indra-ai.dev">indra-ai.dev</a></footer>
+</div>
+</body>
+</html>
