@@ -69,8 +69,8 @@ footer{padding:44px 0 64px;font-size:13px;color:var(--muted);display:flex;justif
 footer a{color:var(--metric);text-decoration:none;border-bottom:1px solid rgba(79,224,200,.35)}
 *:focus-visible{outline:2px solid var(--metric);outline-offset:2px;border-radius:2px}
 .card,.role,.spec,.rule{border-radius:2px}
-.flag{display:inline-flex;flex-direction:column;width:26px;height:17px;border:1px solid var(--line);margin-right:10px;vertical-align:middle;overflow:hidden}
-.flag i{display:block;flex:1}
+.flag{display:inline-block;width:18px;height:6px;background:linear-gradient(180deg,#FFFFFF 0 2px,#C8102E 2px 4px,#FFFFFF 4px 6px);margin-right:10px;vertical-align:-1px;border:0;border-radius:0}
+.flag i{display:none}
 .flag i:nth-child(1),.flag i:nth-child(3){background:#FFFFFF}
 .flag i:nth-child(2){background:#C8102E}
 .lang{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
@@ -80,8 +80,8 @@ footer a{color:var(--metric);text-decoration:none;border-bottom:1px solid rgba(7
 </head>
 <body>
 <div class="hero"><div class="glow"></div><div class="wrap">
-<div class="lang"><span class="flag" role="img" aria-label="беларускі сцяг"><i></i><i></i><i></i></span><a href="index.html" hreflang="be" aria-current="true">BY</a><a href="pl.html" hreflang="pl">PL</a><a href="en.html" hreflang="en">EN</a></div>
-<div class="kick">INDRA AI · <b>брэнд-кіт v3.7</b></div>
+<div class="lang"><a href="index.html" hreflang="be" aria-current="true">BY</a><a href="pl.html" hreflang="pl">PL</a><a href="en.html" hreflang="en">EN</a></div>
+<div class="kick"><span class="flag" role="img" aria-label="беларускі сцяг"></span>INDRA AI · <b>брэнд-кіт v3.7</b></div>
 <h1>Начны прыбор<em>.</em></h1>
 <p class="lede">Палітра, тыпаграфіка, станы і забароны. Чатырнаццаць старонак з адным законам: адзін аб'ект кажа – астатняе чакае.</p>
 </div></div>
